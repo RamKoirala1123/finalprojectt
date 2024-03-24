@@ -1,0 +1,275 @@
+/* 6. GLOBAL PAGE LAYOUT ***************************************************************************/
+
+html,
+body {
+    height: 100%;
+}
+
+#wrapper {
+   background-color: #d8d5d5;
+}
+
+#wrapper2 {
+    overflow: hidden;
+    width: 1240px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+
+
+
+
+/* 1. Header ***************************************************************************/
+header,
+main,
+nav,
+footer {
+    width: 1145px;
+}
+
+.head-top {
+    ---max-width: 1100px;
+    --padding: 1rem;
+    width: 1240px;
+    margin-inline: auto;
+    background-color: teal;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: .75rem;
+    text-transform: uppercase;
+    line-height: 21px
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-cart small {
+    font-size: 0.75rem;
+}
+
+#logo {
+    margin-top: 43px;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.logos {
+    margin-top: 1px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(201, 200, 200);
+}
+
+
+#logo a {
+    display: inline-block;
+}
+
+#logo a img {
+    margin-bottom: 14px;
+}
+
+#logo a b {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    color: #444444;
+    transition: all .4s ease;
+}
+
+#logo b+span {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+    margin-top: 9px;
+    display: inline-block;
+    transition: all .4s ease;
+}
+
+#logo a:hover * {
+    color: teal;
+}
+
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-inline: 4rem;
+}
+
+.hero-section>#carouselExampleControls {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.hero-2 {
+    grid-area: 1 / 4 / 2 / 5;
+
+}
+
+.hero-2>img {
+    width: 95%;
+    height: 100%;
+}
+
+
+#navigation nav {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.secondnav {
+    display: inline-block;
+}
+
+.secondnav>li {
+    display: inline-block;
+    z-index: 10;
+    padding: 0px 13px;
+}
+
+.secondnav>li+li {
+    margin-left: 18px;
+}
+
+.secondnav>li>a {
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    font-size: 15px;
+    color: #969696;
+    text-decoration: none;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.secondnav>li.active>a,
+.secondnav>li:hover>a {
+    color: teal;
+}
+
+.secondnav>li>a.sf-with-ul:hover:after,
+.secondnav>li.current>a.sf-with-ul:after,
+.secondnav>li.sfHover>a.sf-with-ul:after {
+    border-color: teal transparent transparent transparent;
+}
+
+
+
+.secondnav ul {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    background-color: teal;
+    left: 0;
+    top: 25px;
+    padding: 10px 0px;
+}
+
+.secondnav ul li {
+    position: relative;
+    padding: 4px 20px;
+    width: 170px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.secondnav ul li a {
+    color: #ffffff
+}
+
+
+.container .page_heading {
+    background-color: teal;
+}
+
+
+
+/* Custom styles for the success alert */
+.custom-success-alert {
+    background-color: #ec6868;
+    /* Light pink color */
+    color: #8b0000;
+    /* Dark red text color */
+    border: 1px solid #8b0000;
+    /* Dark red border */
+}
+
+
+.rating {
+    display: inline-block;
+}
+
+.about-card {
+    width: 250px;
+    background-color: #e3e3e3;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.about-card .card-img-top {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-top: 20px;
+    border: 4px solid #03bfcb;
+}
+
+.card .card-body {
+    padding: 10px;
+}
+
+.card .card-body .name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #d2679d;
+}
+
+.card .card-body .id {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    /* color: #c2bdbd; */
+}
+
+.card .card-body a {
+    list-style: none;
+}
