@@ -104,7 +104,7 @@ def cart(request):
                     
                 # And Deleting from Cart
                 c.delete()
-            dbname = my_client['Cluster0']
+            dbname = my_client['sweetstore']
             collection_name = dbname["orders"]
             collection_name.insert_many(order_lists)
             return redirect('cart')
@@ -174,7 +174,7 @@ def checkout(request):
 
 @login_required
 def orders(request):
-    dbname = my_client['Cluster0']
+    dbname = my_client['sweetstore']
     collection_name = dbname["orders"]
     results = collection_name.find({'user':request.user.username})
     orders = []
